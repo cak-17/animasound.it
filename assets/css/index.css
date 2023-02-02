@@ -14,8 +14,6 @@
     --white: #FCFCFC;
     --black: #080705;
 
-    --mobile-vp: 576px;
-    --desktop-vp: 768px;
 }
 
 html {
@@ -49,12 +47,12 @@ body {
     text-align: center;
 }
 
-@media only screen and (min-width: var(--mobile-vp)) {
+@media only screen and (min-width: 576px) {
     .container {
         background-image: url("../img/background.png");
     }
 }
-@media only screen and (min-width: var(--desktop-vp)) {
+@media only screen and (min-width: 768px) {
     .container {
         background-position: top;
     }
@@ -141,7 +139,7 @@ span.subContent:nth-child(4) {
     translate: 0px -8px;
 }
 
-@media only screen and (min-width: var(--mobile-vp)) {
+@media only screen and (min-width: 576px) {
     .socialLink {
         font-size: 7rem;
         width: 10rem;
@@ -203,7 +201,7 @@ span.subContent:nth-child(4) {
     background-color: var(--white);
 }
 
-@media only screen and (min-width: var(--mobile-vp)) {
+@media only screen and (min-width: 576px) {
     .topFrame {
         height: 238px;
     }
