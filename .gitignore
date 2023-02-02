@@ -2,6 +2,8 @@
 
 prova*
 *.bak
+*dev/
+*.dev/
 
 
 ### VisualStudioCode ###
