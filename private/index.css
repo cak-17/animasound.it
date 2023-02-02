@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&display=swap');
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    /* outline: solid 1px limegreen; */
+}
+
+:root {
+    --primary: #FFD372;
+    --primary-dark: #565334;
+    --primary-light: #D6BD9E;
+
+    --white: #FCFCFC;
+    --black: #080705;
+
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Helvetica";
+}
+
+img, picture, svg, video {
+    display: inline-block;
+    max-width: 100%;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 1.6rem;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--background);
+}
+
+.container {
+    --text-color: var(--white);
+    --background: var(--black);
+    background-color: var(--background);
+    color: var(--text-color);
+    height: 100vh;
+    background-image: url("../img/background_sm.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+@media only screen and (min-width: 576px) {
+    .container {
+        background-image: url("../img/background.png");
+    }
+}
+@media only screen and (min-width: 768px) {
+    .container {
+        background-position: top;
+    }
+}
+
+section {
+    position: relative;
+    top: 30%;
+    display: grid;
+    z-index: 1;
+}
+
+
+
+
+h1.subTitle {
+    font-size: 3.5rem;
+    filter: drop-shadow(2px 2px 2px var(--primary));
+    color: var(--white);
+    text-align: center;
+    transform: scale(0.94);
+    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+@keyframes scale {
+    100% {
+        transform: scale(1);
+    }
+}
+
+span.subContent {
+    display: inline-block;
+    opacity: 0;
+    filter: blur(4px);
+}
+
+span.subContent:nth-child(1) {
+    animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span.subContent:nth-child(2) {
+    animation: fade-in 0.8s 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span.subContent:nth-child(3) {
+    animation: fade-in 0.8s 1.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span.subContent:nth-child(4) {
+    animation: fade-in 0.8s 1.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+
+@keyframes fade-in {
+    100% {
+        opacity: 1;
+        filter: blur(0);
+    }
+}
+
+.socialMenu {
+    width: auto;
+    height: 12vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.socialLink {
+    color: var(--background);
+    border-radius: 50%;
+    font-size: 5rem;
+    width: 7rem;
+    aspect-ratio: 1;
+    place-content: center;
+    border: 2px solid var(--background);
+    background-color: var(--primary);
+    transition: all 0.2s ease-in-out;
+    display: grid;
+    z-index:2;
+}
+
+.socialLink:hover {
+    color: var(--white);
+    background-color: var(--primary-dark);
+    translate: 0px -8px;
+}
+
+@media only screen and (min-width: 576px) {
+    .socialLink {
+        font-size: 7rem;
+        width: 10rem;
+
+    }
+}
+
+.logoContainer {
+    height: fit-content;
+}
+
+.logoContent {
+    content: "";
+}
+
+.topFrame {
+    height: 180px;
+    display: grid;
+    z-index: 1;
+}
+.topFrame::before {
+    content: "";
+    position: relative;
+    height: 120px;
+    width: 100%;
+    top: 80px;
+    left: 0;
+    background-color: var(--primary);
+    z-index: -1;
+}
+.topFrame .logo {
+    z-index: 1;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    top: -120px;
+}
+
+.line {
+    position: relative;
+    background-color: var(--primary-dark);
+    height: 2px;
+    z-index: 0;
+}
+.line-start {
+    float: left;
+    width: 50%;
+    bottom: 142px;
+}
+.line-end {
+    float: right;
+    position: relative;
+    width: 50%;
+    left: calc(100vw / 2);
+}
+
+.midFrame {
+    height: 4px;
+    background-color: var(--white);
+}
+
+@media only screen and (min-width: 576px) {
+    .topFrame {
+        height: 238px;
+    }
+    .topFrame::before {
+        height: 140px;
+        top: 114px;
+    }
+    .topFrame .logo {
+        top: -134px;
+    }
+    .line-start {
+        bottom: 170px;
+    }
+}
