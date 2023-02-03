@@ -40,6 +40,7 @@ span.error {
     border-radius: 2px;
     font-style: normal;
     font-weight: bold;
+    color: var(--black);
 }
 .skew {
     display: inline-block;
