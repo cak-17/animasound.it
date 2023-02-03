@@ -227,7 +227,9 @@ span.subContent:nth-child(4) {
 
 
 /* iPhone 6/7/8 compatibility */
-@media only screen and (max-width: 375px) and (max-height: 667px) {
+@media only screen
+    and (max-width: 375px) 
+    and (max-height: 667px) {
     section {
         top: 20%;
     }

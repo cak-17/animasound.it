@@ -3,6 +3,9 @@
     --black: #080705;
     --white: #FCFCFC;
     --primary: #FFD372;
+
+    --text: var(--white);
+    --bg: var(--black);
 }
 
 body {
@@ -11,18 +14,28 @@ body {
     place-content: center;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
-    color: var(--white);
-    background-color: var(--black);
+    color: var(--text);
+    background-color: var(--bg);
     padding: 0;
     margin: 0;
 }
+
+h1 {
+    font-size: 3rem;
+}
+p {
+    font-size: 1.6rem;
+}
+.errorMsg {
+    width: 70ch;
+}
 a {
     color: var(--primary);
+    filter: drop-shadow(4px 4px 2px var(--black));
     text-decoration: none;
 }
 span.error {
     padding: 5px;
-    color: var(--black);
     background-color: var(--primary);
     border-radius: 2px;
     font-style: normal;
