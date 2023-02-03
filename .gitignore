@@ -4,6 +4,7 @@ prova*
 *.bak
 *dev/
 *.dev/
+*note.txt
 
 
 ### VisualStudioCode ###
