@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -40,7 +39,7 @@ body {
     background-color: var(--background);
     color: var(--text-color);
     height: 100vh;
-    background-image: url("../img/background_sm.png");
+    background-image: url("./img/background_sm.png");
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -49,7 +48,7 @@ body {
 
 @media only screen and (min-width: 576px) {
     .container {
-        background-image: url("../img/background.png");
+        background-image: url("./img/background.png");
     }
 }
 @media only screen and (min-width: 768px) {

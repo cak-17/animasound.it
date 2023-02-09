@@ -1,22 +1,4 @@
-:root { 
-    --primary-color: #FFD372;
-    --primary-dark: #565334;
-    --primary-light: #D6BD9E;
-    --white: #FCFCFC;
-    --black: #26262b;
-}
 
-html {
-    scroll-behavior: smooth;
-    scroll-margin-block-start: 200px;
-}
-
-.anchor {
-    display: block;
-    height: 5rem;
-    margin-top: -5rem;
-    visibility: hidden;
-}
 
 
 
