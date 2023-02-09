@@ -4,59 +4,11 @@
     --primary-light: #D6BD9E;
     --white: #FCFCFC;
     --black: #26262b;
-    
-    --nav-size: 16rem;
-    --nav-color: transparent; 
-    --nav-text: var(--white);
 }
-*, *::before, *::after {
-    box-sizing: border-box;
-}
+
 html {
     scroll-behavior: smooth;
-    font-size: 62.5%;
-}
-body {
-    --background: var(--white);
-    --text: var(--primary-color);
-    background-color: var(--background);
-    padding: 0;
-    margin: 0;
-    color: var(--text);
-    font-size: 1.6rem;
-}
-
-section {
-    height: 100vh;
-}
-
-.container {
-    padding-inline: 20px;
-}
-
-.header {
-    position: fixed;
-    width: 100%;
-    background-color: var(--nav-color);
-    height: var(--nav-size);
-    transition: all 0.4s linear;
-}
-
-.navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-}
-
-.nav-link {
-    color: var(--nav-text);
-    display: inline;
-    margin: 0 1rem;
-    font-weight: bold;
-}
-.nav-link:hover {
-    color: var(--background);
+    scroll-margin-block-start: 200px;
 }
 
 .anchor {
@@ -66,17 +18,5 @@ section {
     visibility: hidden;
 }
 
-#Home {
-    display: grid;
-    place-content: center;
-    /* background-image: url('../img/band/gruppo_2.jpg'); */
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-}
 
-.hero {
-    display: block;
-    text-align: center;
-}
 
